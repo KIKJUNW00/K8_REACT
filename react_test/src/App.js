@@ -1,7 +1,8 @@
 import './App.css';
 import { FaHome } from "react-icons/fa";
 // import MyDiv1 from './03/MyDiv11';
-import MyList from './04/MyList';
+// import MyList from './04/MyList';
+import Lotto from './05/Lotto';
 
 function App() {
   return (
@@ -10,11 +11,11 @@ function App() {
                       
       <header className="w-full h-20
                         flex justify-between items-center
-                        bg-slate-300">
-              <p className='text-3xl font-bold p-5'>
+                        bg-slate-200">
+              <p className='text-2xl font-bold p-5'>
                 K-DIGITAL 8th
               </p>
-              <p className='text-3xl font-bold p-5'>
+              <p className='text-4xl font-bold p-5'>
                 <FaHome />
               </p>
       </header>
@@ -23,7 +24,8 @@ function App() {
                         flex flex-col justify-center items-center
                         bg-white overflow-y-auto'>
               {/* <MyDiv1 /> */}
-              <MyList />
+              {/* <MyList /> */}
+              <Lotto />
 
         </main>
 
