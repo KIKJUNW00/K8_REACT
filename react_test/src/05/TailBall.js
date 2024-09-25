@@ -13,7 +13,7 @@ export default function TailBall({n}) {
     return (
         <div className={`w-12 h-12 m-2
                         flex justify-center items-center
-                        rounded-full
+                        rounded-full 
                         ${ballcolor['b'+Math.floor(n / 10)]}
                         text-white font-bold text-2xl`}>
             {n}

@@ -2,7 +2,8 @@ import './App.css';
 import { FaHome } from "react-icons/fa";
 // import MyDiv1 from './03/MyDiv11';
 // import MyList from './04/MyList';
-import Lotto from './05/Lotto';
+// import Lotto from './05/Lotto';
+import FoodMain from './06/FoodMain';
 
 function App() {
   return (
@@ -25,7 +26,8 @@ function App() {
                         bg-white overflow-y-auto'>
               {/* <MyDiv1 /> */}
               {/* <MyList /> */}
-              <Lotto />
+              {/* <Lotto /> */}
+              <FoodMain />
 
         </main>
 
