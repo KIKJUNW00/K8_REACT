@@ -1,10 +1,11 @@
 import './App.css';
 import { FaHome } from "react-icons/fa";
+// import MyClock from './02/MyClock';
 // import MyDiv1 from './03/MyDiv11';
 // import MyList from './04/MyList';
 // import Lotto from './05/Lotto';
 // import FoodMain from './06/FoodMain';
-import MyClock from './02/MyClock';
+import BoxOffice from './07/BoxOffice';
 
 function App() {
   return (
@@ -26,10 +27,11 @@ function App() {
                         flex flex-col justify-center items-center
                         bg-white overflow-y-auto'>
               {/* <MyDiv1 /> */}
-              <MyClock />
+              {/* <MyClock /> */}
               {/* <MyList /> */}
               {/* <Lotto /> */}
               {/* <FoodMain /> */}
+              <BoxOffice />
 
         </main>
 
