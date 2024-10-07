@@ -6,7 +6,8 @@ import { FaHome } from "react-icons/fa";
 // import Lotto from './05/Lotto';
 // import FoodMain from './06/FoodMain';
 // import BoxOffice from './07/BoxOffice';
-import Traffic from './09/Traffic';
+// import Traffic from './09/Traffic';
+import MyRef from './10/MyRef';
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
         {/* <Lotto /> */}
         {/* <FoodMain /> */}
         {/* <BoxOffice /> */}
-        <Traffic />
+        {/* <Traffic /> */}
+        <MyRef />
 
       </main>
 

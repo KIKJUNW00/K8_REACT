@@ -1,8 +1,7 @@
 import TailButton from '../UI/TailButton1';
-import { useEffect, useState } from 'react';
 
-export default function TrafficNav({title, c}) {
-    const [sel, setSel] = useState();
+export default function TrafficNav({title, c, sel, setSel}) {
+    // const [sel, setSel] = useState();
 
 
     const handleBtClick = (item) => {
@@ -17,14 +16,11 @@ export default function TrafficNav({title, c}) {
                                 color= {item == sel ? 'orange' : 'blue'}
                                 ClickHandler= {() => handleBtClick(item)}
                             />));
-    // console.log('c1 ====',c1);
-    useEffect(() =>{
-        console.log(sel);
-    },[sel]);
+
 
 
     return (
-        <div className='w-5/6 bg-sky-200 p-2 m-2
+        <div className='w-full bg-sky-200 p-2 m-2
                         flex  justify-between items-center'>
             
             <div className='w-1/5 text-2xl font-bold
