@@ -7,7 +7,9 @@ import { FaHome } from "react-icons/fa";
 // import FoodMain from './06/FoodMain';
 // import BoxOffice from './07/BoxOffice';
 // import Traffic from './09/Traffic';
-import MyRef from './10/MyRef';
+// import MyRef from './10/MyRef';
+// import Gallery from './11/Gallery';
+import Festival from './12/Festival';
 
 function App() {
   return (
@@ -26,8 +28,8 @@ function App() {
       </header>
       <nav className=''>
       </nav>
-      <main className='w-full grow
-                        flex flex-col justify-center items-center
+      <main className='w-full flex-grow
+                        flex flex-col items-center
                         bg-white overflow-y-auto'>
         {/* <MyDiv1 /> */}
         {/* <MyClock /> */}
@@ -36,7 +38,9 @@ function App() {
         {/* <FoodMain /> */}
         {/* <BoxOffice /> */}
         {/* <Traffic /> */}
-        <MyRef />
+        {/* <MyRef /> */}
+        {/* <Gallery /> */}
+        <Festival />
 
       </main>
 
