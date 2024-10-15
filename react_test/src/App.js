@@ -13,6 +13,8 @@ import Traffic from './09/Traffic';
 import Gallery from './11/Gallery';
 import Festival from './12/Festival';
 // import RouteMain from './13/RouteMain';
+import Fcst from './14/Fcst';
+import FcstList from './14/FcstList';
 
 function App() {
   return (
@@ -44,11 +46,19 @@ function App() {
             </li>
 
             <li className='mx-4 p-2 hover:bg-blue-600 hover:text-stone-50 rounded-md'>
-            <Link to='gallary'>관광</Link>
+            <Link to='/gallary'>관광</Link>
             </li>
 
             <li className='mx-4 p-2 hover:bg-violet-600 hover:text-stone-50 rounded-md'>
-            <Link to='festival'>축제</Link>
+            <Link to='/festival'>축제</Link>
+            </li>
+
+            <li className='mx-4 p-2 hover:bg-pink-500 hover:text-stone-50 rounded-md'>
+            <Link to='/fcst'>일기예보</Link>
+            </li>
+
+            <li className='mx-4 p-2 hover:bg-gray-600 hover:text-stone-50 rounded-md'>
+            <Link to='/fcstlist'>일기예보항목</Link>
             </li>
           </ul>
 
@@ -78,6 +88,8 @@ function App() {
             <Route path="/traffic" element={<Traffic />}></Route>
             <Route path="/gallary" element={<Gallery />}></Route>
             <Route path="/festival" element={<Festival />}></Route>
+            <Route path="/fcst" element={<Fcst />}></Route>
+            <Route path="/fcstlist" element={<FcstList />}></Route>
           </Routes>
 
 
