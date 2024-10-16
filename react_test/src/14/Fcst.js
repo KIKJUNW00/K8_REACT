@@ -16,6 +16,10 @@ export default function Fcst() {
     // }
 
     const navigate = useNavigate();
+    //날짜
+    const txtDt = useRef();
+    //지역
+    const txtArea = useRef();
 
     //버튼이 눌러졌을때 
     const handleOk = (gubun) => {
@@ -24,19 +28,21 @@ export default function Fcst() {
             txtDt.current.focus();
             return;
         }
+        if (txtArea.current.value === '') {
+            alert('지역을 선택하세요.')
+            txtArea.current.focus();
+            return;
+          }
+
         console.log(gubun)
         const dt = txtDt.current.value.replaceAll('-','');
         const loc = getxy.filter(item =>item["1단계"] === txtArea.current.value)[0];
         const x = loc["격자 X"]
         const y = loc["격자 Y"]
-        
-        navigate(`/fcstlist?gubun=${gubun}&dt=${dt}&x=${x}&y=${y}`);
+
+        navigate(`/fcstlist?gubun=${gubun}&dt=${dt}&x=${x}&y=${y}&area=${txtArea.current.value}`);
     }
 
-    //날짜
-    const txtDt = useRef();
-    //지역
-    const txtArea = useRef();
 
     return (
         <div className='w-full flex flex-col justify-center items-center'>
