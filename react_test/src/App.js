@@ -3,7 +3,7 @@ import { FaHome } from "react-icons/fa";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Link } from 'react-router-dom'
 import MyClock from './02/MyClock';
-// import MyDiv1 from './03/MyDiv11';
+import MyDiv1 from './03/MyDiv11';
 // import MyList from './04/MyList';
 import Lotto from './05/Lotto';
 import FoodMain from './06/FoodMain';
@@ -15,6 +15,8 @@ import Festival from './12/Festival';
 // import RouteMain from './13/RouteMain';
 import Fcst from './14/Fcst';
 import FcstList from './14/FcstList';
+import Recoil1 from './15/Recoil1';
+import RecoilMain from './15/RecoilMain';
 
 function App() {
   return (
@@ -60,6 +62,7 @@ function App() {
             <li className='mx-4 p-2 hover:bg-gray-600 hover:text-stone-50 rounded-md'>
             <Link to='/fcstlist'>일기예보항목</Link>
             </li>
+
           </ul>
 
           <p className='text-4xl font-bold p-5'>
@@ -90,6 +93,8 @@ function App() {
             <Route path="/festival" element={<Festival />}></Route>
             <Route path="/fcst" element={<Fcst />}></Route>
             <Route path="/fcstlist" element={<FcstList />}></Route>
+            <Route path="/recoil1" element={<Recoil1 />}></Route>
+            <Route path="/recoilmain" element={<RecoilMain />}></Route>
           </Routes>
 
 

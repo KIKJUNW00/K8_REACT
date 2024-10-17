@@ -10,6 +10,7 @@ export default function MyDiv11() {
                     bg-lime-900 text-white font-bold">
         <div className='w-full flex justify-start items-center
                         p-5 m-2'>
+          
           {d1}
         </div>
         <MyDiv21 dn1 ={d1} dn2={d2} dn3={d3} />

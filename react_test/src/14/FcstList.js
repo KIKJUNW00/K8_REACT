@@ -25,6 +25,19 @@ export default function FcstList() {
     //form 값을 참조하기 위한 ref변수
     const selRef = useRef();
 
+    const sky = {'1': '맑음(🌞)', '3':'구름많음(⛅)', '4':'흐림(☁️)'}
+    
+     // 강수 형태 매핑 (초단기예보)
+     const ptyUltraShort = {
+        '0': '없음', '1': '비(🌧️)', '2': '비/눈(🌧️❄️)', '3': '눈(❄️)',
+        '5': '빗방울(💧)', '6': '빗방울눈날림(💧❄️)', '7': '눈날림(❄️)'
+    };
+
+    // 강수 형태 매핑 (단기예보)
+    const ptyShort = {
+        '0': '없음', '1': '비(🌧️)', '2': '비/눈(🌧️❄️)', '3': '눈(❄️)', '4': '소나기(🌦️)'
+    };
+
     //select가 선택되었을때
     const handleSelect = () => {
         console.log(selRef.current.value);
@@ -39,7 +52,14 @@ export default function FcstList() {
                                          {item.fcstDate.slice(0,4)}.{item.fcstDate.slice(4,6)}.{item.fcstDate.slice(6,8)}
                                        </td>
                                         <td>{item.fcstTime.slice(0,2)}:{item.fcstTime.slice(2,4)}</td>
-                                        <td>{item.fcstValue}{code.단위}</td>
+                                        <td>
+                                            {
+                                                 item.category === 'SKY' ? sky[item.fcstValue]
+                                                    : item.category === 'PTY' && gubun === '단기예보' ? ptyShort[item.fcstValue]
+                                                        : item.category === 'PTY' && gubun === '초단기예보' ? ptyUltraShort[item.fcstValue]
+                                                            : item.fcstValue + code.단위
+                                            }
+                                        </td>
                                     </tr>);
 
         setTrs(tm);
