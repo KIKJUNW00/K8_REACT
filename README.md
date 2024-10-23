@@ -16,6 +16,7 @@
     - <컴포넌트 />
 
 3. 컴포넌트 
+    - {} 안에 변수명을 넣어서 사용
 
 4. props
     + 부모 컴포넌트에서 자식 컴포너트로 자료 전달시 사용
@@ -24,6 +25,7 @@
         + export default function Recoil2(props)
             + 변수 접근시 props.변수명
         + export default function Recoil2()
+            + 변수 접근시 변수명 그대로 사용
 
 5. state 변수
     + 화면의 변경을 감지하기 위한 장치
@@ -44,7 +46,13 @@
 
 8. useRef
     + 폼요소 참조시 사용 가능
-    +
+    + 선언 : const ref변수명 = useRef()
+        + import {useRef} from react ;
+        + 폼요소에 ref속성으로 연결 :
+         - <input type='number' ref = {inRef} />
+
+9. recoil로 상태변수 관리
+
 
 [TailwindCss]
 1. classname에 클래스명으로 추가
@@ -63,6 +71,10 @@
         + grid-gap- : 칸 간격
     + m- : 마진설정 : ml-, mr-, mx-, mt-, mb-, my-
     + p- : 패딩설정
-    + border
+    + border : 테두리
+
+4. 배경색 : bg-
+5. 글자색 : text-
+6. 글자진하게 : font-bold
  
  
